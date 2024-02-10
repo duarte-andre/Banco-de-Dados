@@ -1,0 +1,9 @@
+scalabilidade e flexibilidade: Um banco de dados NoSQL, como o MongoDB ou o Cassandra, é projetado para ser altamente escalável e flexível. Além disso, o modelo de dados flexíveis do NoSQL permite que você armazene diferentes tipos de arquivos sem a necessidade de um esquema rígido, tornando-o adequado para lidar com uma ampla variedade de formatos de arquivos.
+
+script:
+
+use somativa;
+
+db.usuarios.insertMany([{nome:'Andre',arquivo1:'aapp.txt',arquivo2:'macaco.sql'},{nome:'Danilo',arquivo1:'flyfly.py'}])
+
+db.usuarios.find({nome: {$regex: 'Andre'}})
